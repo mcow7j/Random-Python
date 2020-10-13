@@ -1,6 +1,6 @@
 import numpy as np
 
-def ARM_simulation(timesteps=100,num_of_pairs_workers=3,conv_length=3,prob=[0.2,0.4,0.2,0.2]):
+def con_simulation(timesteps=100,num_of_pairs_workers=3,conv_length=3,prob=[0.2,0.4,0.2,0.2]):
   """The following assuumptions have be made when simulating the arm conveyor problem:
       -conveyor and workers hands are empty at start
       -one of a pair of workers is dominate and always makes all his decisions first
@@ -91,7 +91,7 @@ def ARM_simulation(timesteps=100,num_of_pairs_workers=3,conv_length=3,prob=[0.2,
 
 
 if __name__=='__main__':
-    P,Q,I = ARM_simulation()
+    P,Q,I = con_simulation()
     print( 'number of P produced = ', P)
     print( 'number of Q produced  = ', Q)
     print( 'number of components untouched  = ', I)
