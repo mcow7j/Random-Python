@@ -1,4 +1,4 @@
-"""code used to rsa encrpt and decode messages, created to use with python 2. There are multiple bugs"""
+""" this code has depreciated it was used to rsa encrpt and decode messages, created to use with python 2. There are multiple bugs"""
 
 from math import log10
 
