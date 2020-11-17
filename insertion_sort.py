@@ -16,7 +16,7 @@ def isort(X):
 if __name__=='__main__':
     """
     Executing "run isort" within a python terminal will run the example
-    code below
+    code below, which generates a random numpy array of 8 intergers
     """
     import numpy as np
     A = list(np.random.randint(0,20,8))
