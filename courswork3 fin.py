@@ -1,7 +1,11 @@
+"""module to to find the next prime number using miller rabin test, given integer n.
+-isprime uses miller rabin test test if prime number
+-next primes uses isprime"""
 
 from itertools import *
+from random import *
 
-def divisor4(b):
+def divisor(b):
     for i in count():
         if not(b % 2 == 0):
             global s,d
@@ -11,16 +15,15 @@ def divisor4(b):
         else:
             b = b/2
 
-
 def miller(n,a):
-    divisor4(n-1)
+    divisor(n-1)
     list1=[]
     for m in xrange(max(1,s)):
         list1.append(pow(a,(2**m)*d,n))
     return list1
 
 def miller_rabin_test(n,a):
-    divisor4(n-1)
+    divisor(n-1)
     if pow(a,d,n)==1:
         return True
     for m in xrange(max(1,s)):
@@ -28,13 +31,6 @@ def miller_rabin_test(n,a):
         if x==n-1:
             return True
     return False
-
-    
-
-#for i in range(0,561):
-    #print miller_rabin_test(561,i),i
-
-from random import *
 
 def isprime(n):
     v=0
@@ -54,11 +50,6 @@ def nextprime(n):
                 return i
     else:
         for i in count(n+2,2):
-            if isprime(i)==True:
-                return i
-
-def nextprime1(n):
-    for i in count(n+1):
             if isprime(i)==True:
                 return i
     
