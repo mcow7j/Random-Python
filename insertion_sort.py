@@ -1,3 +1,10 @@
+""" Module contains 1 function:
+isort-sorts a list of numbers
+Running this module will run isort with a random sequence
+of 8 integers
+"""
+
+
 def isort(X):
     """Sort X using insertion sort algorithm and return sorted array
     """
@@ -16,7 +23,7 @@ def isort(X):
 if __name__=='__main__':
     """
     Executing "run isort" within a python terminal will run the example
-    code below, which generates a random numpy array of 8 intergers
+    code below, which generates a list of random numpy array of 8 intergers
     """
     import numpy as np
     A = list(np.random.randint(0,20,8))
