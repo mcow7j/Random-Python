@@ -1,5 +1,11 @@
+from math import log10
+
+def digitcount(a):
+    z=log10(a)
+    return int(z)+1
+
 def ehcf(a, b):
-    """ p1*q1-h1=b""" 
+    """ function useful for finding d in rsa p1*a+q1*b=h1""" 
     p1,q1,h1,p2,q2,h2=1,0,a,0,1,b
     while h2>0:
         r=h1/h2
@@ -16,12 +22,6 @@ def dfinder(k,l):
         return d
     else: 
         return False
-
-from math import log10
-
-def digitcount(a):
-    z=log10(a)
-    return int(z)+1
     
 def decode7(c,e,n,q):
     dfinder(e,q)
