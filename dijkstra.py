@@ -1,4 +1,5 @@
-"""Basic Dijkstra algorithm implemented using dictionaries.
+"""Basic Dijkstra algorithm implemented using dictionaries. Generates dictionary of shortest distances to all other nodes 
+given list of nodes and weights in the following format [[node1,node2,weight],[node3,node5,weight]..... ]
 """
 import networkx as nx
 
@@ -42,7 +43,7 @@ def dijkstra(G,s):
 
 
 if __name__=='__main__':
-    #Example from lecture 8 slides
+    #create a random graph and make it networkx graph, generates dictionary of shortest distances to all other nodes
     e=[[1,2,3],[1,5,2],[2,3,1],[2,5,1],[5,4,5],[3,4,2],[4,6,1]]
     G = nx.Graph()
     G.add_weighted_edges_from(e)
