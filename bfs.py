@@ -32,3 +32,12 @@ def bfs(G,s):
             print("v=",v)
             print("Q=",Q)
     return L2,L3
+
+if __name__=='__main__':
+    #create a random graph and make it networkx graph
+    e=[[1,2,1],[1,5,1],[2,3,1],[2,5,1],[5,4,1],[3,4,1],[4,6,1]]
+    G = nx.Graph()
+    G.add_weighted_edges_from(e)
+    source = 1
+    L2,L3 = bfs(G,source)
+    print('reachable',L1, 'Not reachable',L2)
