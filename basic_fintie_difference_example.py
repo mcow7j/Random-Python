@@ -1,6 +1,7 @@
 """Basic 2nd-order centered finite difference method
 """
 
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -32,7 +33,7 @@ error = np.abs(df-df_exact)
 error_total = error.sum()/N
 
 
-#display stuff
+#display graphs
 plt.figure()
 plt.plot(x,f)
 plt.xlabel('x')
