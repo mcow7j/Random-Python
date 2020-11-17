@@ -1,3 +1,5 @@
+""" includes function used to decode rsa encrpyted messagfes givin certain important info""" 
+
 from math import log10
 
 def digitcount(a):
