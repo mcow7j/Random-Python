@@ -1,13 +1,13 @@
 # Random-Python
 A compilation of random Python scripts and projects. 
 
-#### FW_Euler_Method
+### FW_Euler_Method
 
 The FW_Euler_Method solvesd the followiong equation:
 
 ![image](https://user-images.githubusercontent.com/58078485/99514987-47aeec00-2984-11eb-8b57-502a1007f6a8.png)
 
-#### Trapezoid_Method
+### Trapezoid_Method
 
 The trapezoid method returns a graph of the green area for different values of n. It calulates this using a trazepriod method with intervals of 0.01.
 
